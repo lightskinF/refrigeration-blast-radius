@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code or its results, please cite it as below."
+title: "One compromised node, how many stores? Blast radius and in-store defences in supermarket refrigeration remote management"
+type: software
+authors:
+  - family-names: "Greco"
+    given-names: "Fabio"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+date-released: "2026-11-20"
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/lightskinF/refrigeration-blast-radius"
+keywords:
+  - cyber-physical systems security
+  - remote management
+  - commercial refrigeration
+  - blast radius
+  - defence in depth
+  - simulation

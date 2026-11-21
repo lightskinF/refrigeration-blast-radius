@@ -1,0 +1,14 @@
+Lo script dell'attaccante invia 13 comandi dalle 02:00 in poi
+Merce persa = piu' di 60 minuti sopra -15 °C (criterio dello studio)
+
+Scenario                         Sbrinamento     T max  Min. sopra soglia  Merce persa  Perdita (20 negozi)
+0. Nessuna difesa                    300 min    31.2 °C                352           SI            600,000 €
+1. Filtro: solo durata max           300 min    31.2 °C                352           SI            600,000 €
+2. Filtro: durata + intervallo        30 min    -9.3 °C                 53           NO                  0 €
+3. Solo allarme (tecnico)             78 min     1.4 °C                151           SI            600,000 €
+4. Protezione automatica              18 min   -12.3 °C                 25           NO                  0 €
+
+Nota: negli scenari 0 e 1 alle 08:00 il banco e' ancora sopra soglia,
+quindi i minuti sopra soglia sono un valore minimo.
+
+Grafico salvato in figures/passo3_grafico.png

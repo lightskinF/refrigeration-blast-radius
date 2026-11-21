@@ -1,0 +1,40 @@
+1) MODELLO ISU
+   autovalore -1/tau = -0.0040 1/min (tau = 250 min): stabile
+   equilibri: sbrinamento 52 °C, compressore acceso -58 °C, tutto spento 22 °C
+
+2) FORMA CHIUSA CONTRO SIMULAZIONE
+   T0 alle 02:00 = -17.15 °C
+   tempo per superare -15 °C: 7.9 min
+     durata d   forma chiusa   simulazione
+        20 min        29.9 min       29.8 min
+        25 min        41.7 min       41.7 min
+        30 min        53.1 min       53.0 min
+        35 min        64.3 min       64.2 min
+        40 min        75.2 min       75.2 min
+   durata massima ammissibile (M = 60 min): 33.1 min
+   protezione automatica: sbrinamento di 17.9 min -> 24.8 min sopra soglia
+   (simulazione, passo di 10 s: sbrinamento di 18.0 min -> 25.0 min sopra soglia)
+   allarme con tecnico: tempo di risposta massimo = 33.1 - 7.9 - 10 = 15.2 min
+
+3) LIMITI DI PROGETTO AL VARIARE DEL BANCO (T0 ricalcolata per ogni banco)
+   Un r_max negativo vuol dire che nemmeno la protezione automatica (risposta 0)
+   resta entro il criterio.
+                     T0     t1  M(30) chiusa  M(30) sim.   d_max   r_max
+   UA  x 0.5    -18.75   19.0          19.5        19.7    53.4    24.4
+   UA  x 0.75   -17.10    9.0          42.8        42.8    38.8    19.8
+   UA  x 1.0    -17.15    7.9          53.1        53.0    33.1    15.2
+   UA  x 1.25   -17.27    7.3          66.1        66.2    27.7    10.4
+   UA  x 1.5    -18.25    9.3          77.8        77.8    24.6     5.4
+                     T0     t1  M(30) chiusa  M(30) sim.   d_max   r_max
+   P_s x 0.5    -17.15   10.1          42.0        42.0    39.1    19.0
+   P_s x 0.75   -17.15    8.9          47.7        47.7    35.8    16.9
+   P_s x 1.0    -17.15    7.9          53.1        53.0    33.1    15.2
+   P_s x 1.5    -17.15    6.5          63.1        63.2    28.8    12.3
+   P_s x 2.0    -17.15    5.5          72.4        72.3    25.5    10.0
+
+4) SOGLIA DI CONVENIENZA DI UNA PROTEZIONE (costi d'esempio)
+     50 € all'anno per negozio -> conviene se p > 0.17% all'anno
+    100 € all'anno per negozio -> conviene se p > 0.33% all'anno
+    200 € all'anno per negozio -> conviene se p > 0.67% all'anno
+    300 € all'anno per negozio -> conviene se p > 1.00% all'anno
+    500 € all'anno per negozio -> conviene se p > 1.67% all'anno

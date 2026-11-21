@@ -1,0 +1,9 @@
+Banco sopra soglia per 352 minuti (finestra simulata, fino alle 08:00)
+Tolleranza: 60 minuti -> merce persa: SI
+
+Architettura          Nodi   Negozi (peggiore)   Negozi (medio)   Perdita peggiore   Perdita media
+A. Centralizzata         1                  20             20.0          600,000 €       600,000 €
+B. Per provincia         5                   8              4.0          240,000 €       120,000 €
+C. Per negozio          20                   1              1.0           30,000 €        30,000 €
+
+Grafico salvato in figures/passo2_grafico.png

@@ -1,0 +1,6 @@
+RISULTATI (parametri illustrativi)
+- Soglia di -15 °C superata dopo 8 minuti dall'attacco
+- Temperatura all'arrivo del personale (07:00): 31.2 °C
+- Temperatura alle 08:00, dopo un'ora di funzionamento locale: 12.1 °C
+- Temperatura a cui tenderebbe il banco se nessuno intervenisse: 52 °C
+Grafico salvato in figures/passo1_grafico.png

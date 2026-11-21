@@ -1,0 +1,70 @@
+A. Allarme: minuti tra allarme e intervento (0 = protezione automatica)
+   intervento  0 min ->   25 min sopra soglia, T max -12.3 °C, entro il criterio
+   intervento  5 min ->   37 min sopra soglia, T max -11.1 °C, entro il criterio
+   intervento 10 min ->   48 min sopra soglia, T max  -9.8 °C, entro il criterio
+   intervento 15 min ->   59 min sopra soglia, T max  -8.6 °C, entro il criterio
+   intervento 20 min ->   70 min sopra soglia, T max  -7.4 °C, oltre il criterio
+   intervento 25 min ->   82 min sopra soglia, T max  -6.2 °C, oltre il criterio
+   intervento 30 min ->   92 min sopra soglia, T max  -5.1 °C, oltre il criterio
+   intervento 35 min ->  102 min sopra soglia, T max  -4.0 °C, oltre il criterio
+   intervento 40 min ->  112 min sopra soglia, T max  -2.8 °C, oltre il criterio
+   intervento 45 min ->  122 min sopra soglia, T max  -1.8 °C, oltre il criterio
+   intervento 50 min ->  132 min sopra soglia, T max  -0.7 °C, oltre il criterio
+   intervento 55 min ->  142 min sopra soglia, T max   0.4 °C, oltre il criterio
+   intervento 60 min ->  151 min sopra soglia, T max   1.4 °C, oltre il criterio
+
+B. Filtro completo: durata massima dello sbrinamento consentita
+   durata max 10 min ->    5 min sopra soglia, T max -14.4 °C, entro il criterio
+   durata max 15 min ->   18 min sopra soglia, T max -13.1 °C, entro il criterio
+   durata max 20 min ->   30 min sopra soglia, T max -11.8 °C, entro il criterio
+   durata max 25 min ->   42 min sopra soglia, T max -10.6 °C, entro il criterio
+   durata max 30 min ->   53 min sopra soglia, T max  -9.3 °C, entro il criterio
+   durata max 35 min ->   64 min sopra soglia, T max  -8.1 °C, oltre il criterio
+   durata max 40 min ->   75 min sopra soglia, T max  -6.9 °C, oltre il criterio
+   durata max 45 min ->   86 min sopra soglia, T max  -5.8 °C, oltre il criterio
+   durata max 50 min ->   96 min sopra soglia, T max  -4.6 °C, oltre il criterio
+   durata max 55 min ->  106 min sopra soglia, T max  -3.5 °C, oltre il criterio
+   durata max 60 min ->  116 min sopra soglia, T max  -2.4 °C, oltre il criterio
+
+C. Filtro completo: intervallo minimo R2 tra due sbrinamenti
+   (il personale arriva alle 07:00: da li' i comandi remoti sono ignorati)
+   intervallo 1 h ->  322 min sopra soglia, T max  -3.4 °C, oltre il criterio
+   intervallo 2 h ->  155 min sopra soglia, T max  -9.3 °C, oltre il criterio
+   intervallo 3 h ->  100 min sopra soglia, T max  -9.3 °C, oltre il criterio
+   intervallo 4 h ->   94 min sopra soglia, T max  -9.3 °C, oltre il criterio
+   intervallo 4.5 h ->  100 min sopra soglia, T max  -9.3 °C, oltre il criterio
+   intervallo 4.75 h ->   53 min sopra soglia, T max  -9.3 °C, entro il criterio
+   intervallo 5 h ->   53 min sopra soglia, T max  -9.3 °C, entro il criterio
+   intervallo 6 h ->   53 min sopra soglia, T max  -9.3 °C, entro il criterio
+   intervallo 8 h ->   53 min sopra soglia, T max  -9.3 °C, entro il criterio
+
+D. Inerzia termica del banco (C x fattore)
+   C x 0.5  -> filtro completo   56 min (entro il criterio), allarme con tecnico  134 min (oltre il criterio), protezione automatica   24 min (entro il criterio)
+   C x 0.75 -> filtro completo   50 min (entro il criterio), allarme con tecnico  144 min (oltre il criterio), protezione automatica   25 min (entro il criterio)
+   C x 1.0  -> filtro completo   53 min (entro il criterio), allarme con tecnico  151 min (oltre il criterio), protezione automatica   25 min (entro il criterio)
+   C x 1.5  -> filtro completo   31 min (entro il criterio), allarme con tecnico  158 min (oltre il criterio), protezione automatica   25 min (entro il criterio)
+   C x 2.0  -> filtro completo   31 min (entro il criterio), allarme con tecnico  162 min (oltre il criterio), protezione automatica   26 min (entro il criterio)
+
+E. Orario d'attacco lungo un ciclo del termostato
+   attacco alle 02:00 -> filtro completo   53 min, allarme con tecnico  151 min, protezione automatica   25 min
+   attacco alle 02:05 -> filtro completo   49 min, allarme con tecnico  150 min, protezione automatica   25 min
+   attacco alle 02:10 -> filtro completo   42 min, allarme con tecnico  151 min, protezione automatica   25 min
+   attacco alle 02:15 -> filtro completo   40 min, allarme con tecnico  151 min, protezione automatica   25 min
+   attacco alle 02:20 -> filtro completo   46 min, allarme con tecnico  151 min, protezione automatica   25 min
+   attacco alle 02:25 -> filtro completo   53 min, allarme con tecnico  151 min, protezione automatica   25 min
+
+F. Conduttanza termica UA (x fattore; T0 = temperatura alle 02:00)
+   UA x 0.5  (T0 -18.75 °C) -> filtro completo   20 min (entro il criterio), allarme con tecnico  119 min (oltre il criterio), protezione automatica   18 min (entro il criterio)
+   UA x 0.75 (T0 -17.10 °C) -> filtro completo   43 min (entro il criterio), allarme con tecnico  133 min (oltre il criterio), protezione automatica   21 min (entro il criterio)
+   UA x 1.0  (T0 -17.15 °C) -> filtro completo   53 min (entro il criterio), allarme con tecnico  151 min (oltre il criterio), protezione automatica   25 min (entro il criterio)
+   UA x 1.25 (T0 -17.27 °C) -> filtro completo   66 min (oltre il criterio), allarme con tecnico  172 min (oltre il criterio), protezione automatica   31 min (entro il criterio)
+   UA x 1.5  (T0 -18.25 °C) -> filtro completo   78 min (oltre il criterio), allarme con tecnico  201 min (oltre il criterio), protezione automatica   41 min (entro il criterio)
+
+G. Potenza di sbrinamento P_s (x fattore; T0 = temperatura alle 02:00)
+   P_s x 0.5  (T0 -17.15 °C) -> filtro completo   42 min (entro il criterio), allarme con tecnico  135 min (oltre il criterio), protezione automatica   22 min (entro il criterio)
+   P_s x 0.75 (T0 -17.15 °C) -> filtro completo   48 min (entro il criterio), allarme con tecnico  143 min (oltre il criterio), protezione automatica   24 min (entro il criterio)
+   P_s x 1.0  (T0 -17.15 °C) -> filtro completo   53 min (entro il criterio), allarme con tecnico  151 min (oltre il criterio), protezione automatica   25 min (entro il criterio)
+   P_s x 1.5  (T0 -17.15 °C) -> filtro completo   63 min (oltre il criterio), allarme con tecnico  165 min (oltre il criterio), protezione automatica   28 min (entro il criterio)
+   P_s x 2.0  (T0 -17.15 °C) -> filtro completo   72 min (oltre il criterio), allarme con tecnico  179 min (oltre il criterio), protezione automatica   31 min (entro il criterio)
+
+Grafico salvato in figures/passo4_grafico.png
